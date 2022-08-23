@@ -1,17 +1,18 @@
 import { Checkbox } from 'antd';
+import classNames from 'classnames';
 
 interface TodoPointProps {
   title: string,
-  isActive: boolean,
+  status: boolean,
 }
 
-function TodoPoint({ title, isActive }: TodoPointProps) {
+function TodoPoint({ title, status }: TodoPointProps) {
   return (
     <div
-      className="todo-point"
+      className={classNames("todo-point", !status && "active")}
     >
-      <Checkbox type="checkbox" checked={isActive} />
-      <h3>{title}</h3>
+      <Checkbox type="checkbox" checked={status} />
+      <span>{title}</span>
     </div>
   );
 }
