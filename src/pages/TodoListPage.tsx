@@ -12,7 +12,7 @@ function TodoListPage() {
       <div className="content">
         <h1>TO-DO LIST</h1>
         <div className="create-todo-panel">
-          <Input />
+          <Input placeholder="Create new..." />
           <Button>+</Button>
         </div>
 
