@@ -1,6 +1,6 @@
 import { Button as AntButton, ButtonProps } from 'antd';
 import classNames from 'classnames';
-import styles from './styles.module.scss';
+import styles from './styles.module.less';
 
 function Button({ children, className, ...props }: ButtonProps) {
   return (
